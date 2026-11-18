@@ -1,1 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="AI Teacher - Pure HTML5 Educational Platform Structure">
+  <title>AI Teacher | Pure HTML5 Educational Workspace</title>
+</head>
+<body>
 
+  <!-- =====================================================================
+       SITE HEADER & PRIMARY NAVIGATION
+       ===================================================================== -->
+  <header id="top">
+    <h1>AI Teacher</h1>
+    <p><em>Pure HTML5 Structural Prototype — Ready for CSS Styling &amp; Backend Integration</em></p>
+
+    <!-- Global Quick Selectors (Language, Class, Education Board) -->
+    <form action="#settings" method="get" aria-label="Quick Academic Context">
+      <fieldset>
+        <legend>Quick Academic &amp; Language Context</legend>
+
+        <label for="header-lang">Language:</label>
+        <select id="header-lang" name="language">
+          <option value="en" selected>English</option>
+          <option value="hi">Hindi (हिन्दी)</option>
+          <option value="es">Spanish (Español)</option>
+          <option value="fr">French (Français)</option>
+          <option value="ar">Arabic (العربية)</option>
+        </select>
+
+        <label for="header-class">Class / Grade:</label>
+        <select id="header-class" name="class">
+          <option value="8">Class 8</option>
+          <option value="9">Class 9</option>
+          <option value="10" selected>Class 10</option>
+          <option value="11">Class 11</option>
+          <option value="12">Class 12</option>
+          <option value="ug">Undergraduate</option>
+        </select>
+
+        <label for="header-board">Education Board:</label>
+        <select id="header-board" name="board">
+          <option value="cbse" selected>CBSE</option>
+          <option value="icse">ICSE</option>
+          <option value="state">State Board</option>
+          <option value="ib">IB (International Baccalaureate)</option>
+          <option value="cambridge">Cambridge IGCSE / A-Levels</option>
+          <option value="common-core">US Common Core</option>
+        </select>
+
+        <button type="submit">Apply Context (Requires Backend)</button>
+      </fieldset>
+    </form>
+
+    <!-- Primary Section Navigation -->
+    <nav aria-label="Main Platform Navigation">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#ai-chat">AI Tutor Chat</a></li>
+        <li><a href="#subjects">Subjects</a></li>
+        <li><a href="#textbook-library">Textbook Library</a></li>
+        <li><a href="#notes">Notes</a></li>
+        <li><a href="#quiz">Quiz</a></li>
+        <li><a href="#flashcards">Flashcards</a></li>
+        <li><a href="#exam-prep">Exam Preparation</a></li>
+        <li><a href="#profile">Student Profile</a></li>
+        <li><a href="#settings">Settings</a></li>
+      </ul>
+    </nav>
+    <hr>
+  </header>
+
+  <!-- =====================================================================
+       SIDEBAR: NEW CHAT & CHAT HISTORY
+       ===================================================================== -->
+  <aside aria-label="Chat Sessions and History">
+    <h2>Chat Sessions</h2>
+
+    <!-- New Chat Trigger -->
+    <form action="#ai-chat" method="get">
+      <button type="submit">+ Start New Chat Session (Placeholder)</button>
+    </form>
+
+    <h3>Chat History</h3>
+    <p><small><em>Placeholder: Past tutoring sessions will load dynamically here when connected to a database.</em></small></p>
+
+    <nav aria-label="Previous Conversations">
+      <ul>
+        <li>
+          <a href="#ai-chat"><strong>Quadratic Equations &amp; Discriminants</strong></a><br>
+          <small>Subject: Mathematics | Yesterday</small>
+        </li>
+        <li>
+          <a href="#ai-chat"><strong>Photosynthesis Light-Dependent Reactions</strong></a><br>
+          <small>Subject: Biology | 3 days ago</small>
+        </li>
+        <li>
+          <a href="#ai-chat"><strong>French Revolution: Causes &amp; Timeline</strong></a><br>
+          <small>Subject: History | Nov 12</small>
+        </li>
+        <li>
+          <a href="#ai-chat"><strong>Ohm's Law &amp; Series/Parallel Circuits</strong></a><br>
+          <small>Subject: Physics | Nov 09</small>
+        </li>
+      </ul>
+    </nav>
+    <hr>
+  </aside>
+
+  <!-- =====================================================================
+       MAIN CONTENT AREA
+       ===================================================================== -->
+  <main>
+
+    <!-- -------------------------------------------------------------------
+         1. AI TEACHER HOMEPAGE / HERO OVERVIEW
+         ------------------------------------------------------------------- -->
+    <section id="home" aria-labelledby="home-heading">
+      <h2 id="home-heading">Welcome to AI Teacher</h2>
+      <p>
+        <strong>Your Personal 24/7 Curriculum-Aligned Study Companion.</strong>
+        Ask doubts, practice chapter-wise quizzes, review flashcards, and generate structured revision notes tailored to your class and education board.
+      </p>
+
+      <article>
+        <h3>Platform Status Notice</h3>
+        <blockquote>
+          <strong>HTML5 Structural Prototype:</strong> This page is built exclusively with semantic HTML5. Interactive features such as live AI responses, file uploads, quiz grading, and saving preferences require CSS for styling and JavaScript/Backend APIs for functionality.
+        </blockquote>
+      </article>
+
+      <h3>Quick Start Actions</h3>
+      <ul>
+        <li><a href="#ai-chat">Ask a Question in AI Tutor Chat</a></li>
+        <li><a href="#subjects">Browse Subjects &amp; Syllabus</a></li>
+        <li><a href="#quiz">Take a Practice Quiz</a></li>
+        <li><a href="#exam-prep">Open Exam Preparation Planner</a></li>
+      </ul>
+      <hr>
+    </section>
+
+    <!-- -------------------------------------------------------------------
+         2. AI CHAT INTERFACE LAYOUT
+         ------------------------------------------------------------------- -->
+    <section id="ai-chat" aria-labelledby="chat-heading">
+      <h2 id="chat-heading">AI Tutor Chat Interface</h2>
+      <p><em>Placeholder: Real-time conversational tutoring window. Connect an LLM API and WebSocket/Fetch handler here.</em></p>
+
+      <!-- Active Session Header -->
+      <header>
+        <h3>Active Session: Quadratic Equations (Class 10 - Mathematics)</h3>
+        <p><small>Mode: Step-by-Step Explanation | Board: CBSE</small></p>
+      </header>
+
+      <!-- Conversation Thread Container -->
+      <div role="log" aria-live="polite" aria-label="Chat Messages">
+        <article>
+          <h4>AI Teacher <small>(09:30 AM)</small></h4>
+          <p>Hello! I am your AI Teacher. Which chapter or concept would you like to study today? You can paste a problem, ask for a summary, or request practice questions.</p>
+        </article>
+
+        <article>
+          <h4>Student <small>(09:31 AM)</small></h4>
+          <p>Can you explain how to find the nature of roots of a quadratic equation using the discriminant?</p>
+        </article>
+
+        <article>
+          <h4>AI Teacher <small>(09:31 AM)</small></h4>
+          <p>Certainly! For a standard quadratic equation <strong>ax&sup2; + bx + c = 0</strong> (where a &ne; 0), the discriminant is given by <strong>D = b&sup2; &minus; 4ac</strong>:</p>
+          <ul>
+            <li><strong>If D &gt; 0:</strong> Two distinct real roots exist.</li>
+            <li><strong>If D = 0:</strong> Two equal real roots exist.</li>
+            <li><strong>If D &lt; 0:</strong> No real roots exist (roots are complex/imaginary).</li>
+          </ul>
+          <p>Would you like to solve an example problem together?</p>
+        </article>
+      </div>
+
+      <!-- Message Input Area & Send Form -->
+      <form action="#ai-chat" method="post" aria-label="Send Message to AI Teacher">
+        <fieldset>
+          <legend>Message Input Area</legend>
+
+          <label for="chat-prompt-type">Prompt Mode:</label>
+          <select id="chat-prompt-type" name="prompt_type">
+            <option value="explain" selected>Explain Concept</option>
+            <option value="solve">Solve Step-by-Step</option>
+            <option value="summarize">Summarize Topic</option>
+            <option value="quiz-me">Quiz Me on This</option>
+          </select>
+          <br><br>
+
+          <label for="chat-message">Your Question or Message:</label><br>
+          <textarea id="chat-message" name="message" rows="4" cols="70" placeholder="Type your question, paste a math problem, or ask for an example... (Requires JS/Backend to submit)" required></textarea>
+          <br><br>
+
+          <label for="chat-attachment">Attach Reference Image or PDF (Optional):</label>
+          <input type="file" id="chat-attachment" name="attachment" accept=".pdf,.png,.jpg,.jpeg">
+          <br><br>
+
+          <button type="submit">Send Message</button>
+          <button type="reset">Clear Input</button>
+        </fieldset>
+      </form>
+      <hr>
+    </section>
+
+    <!-- -------------------------------------------------------------------
+         3. SUBJECTS SECTION
+         ------------------------------------------------------------------- -->
+    <section id="subjects" aria-labelledby="subjects-heading">
+      <h2 id="subjects-heading">Subjects &amp; Curriculum</h2>
+      <p><em>Placeholder: Select a subject to filter textbooks, AI prompts, quizzes, and revision notes.</em></p>
+
+      <table border="1">
+        <caption>Available Subjects for Selected Class &amp; Board</caption>
+        <thead>
+          <tr>
+            <th scope="col">Subject</th>
+            <th scope="col">Total Chapters</th>
+            <th scope="col">Completed</th>
+            <th scope="col">Current Focus Topic</th>
+            <th scope="col">Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Mathematics</strong></td>
+            <td>15</td>
+            <td>9</td>
+            <td>Quadratic Equations &amp; Arithmetic Progressions</td>
+            <td><a href="#ai-chat">Study with AI</a></td>
+          </tr>
+          <tr>
+            <td><strong>Science (Physics, Chemistry, Biology)</strong></td>
+            <td>16</td>
+            <td>11</td>
+            <td>Electricity, Chemical Reactions, Life Processes</td>
+            <td><a href="#ai-chat">Study with AI</a></td>
+          </tr>
+          <tr>
+            <td><strong>Social Science</strong></td>
+            <td>20</td>
+            <td>12</td>
+            <td>Nationalism in Europe &amp; Resources Development</td>
+            <td><a href="#ai-chat">Study with AI</a></td>
+          </tr>
+          <tr>
+            <td><strong>English Literature &amp; Grammar</strong></td>
+            <td>12</td>
+            <td>8</td>
+            <td>Analytical Paragraph Writing &amp; Prose Analysis</td>
+            <td><a href="#ai-chat">Study with AI</a></td>
+          </tr>
+          <tr>
+            <td><strong>Computer Science / AI</strong></td>
+            <td>10</td>
+            <td>7</td>
+            <td>HTML5 Semantics, Python Basics &amp; Data Literacy</td>
+            <td><a href="#ai-chat">Study with AI</a></td>
+          </tr>
+        </tbody>
+      </table>
+      <hr>
+    </section>
+
+    <!-- -------------------------------------------------------------------
+         4. TEXTBOOK LIBRARY SECTION
+         ------------------------------------------------------------------- -->
+    <section id="textbook-library" aria-labelledby="library-heading">
+      <h2 id="library-heading">Textbook Library</h2>
+      <p><em>Placeholder: Digital textbook repository and chapter reader links. File viewing and search require backend storage.</em></p>
+
+      <!-- Library Search Form -->
+      <form action="#textbook-library" method="get" aria-label="Search Textbooks">
+        <label for="book-search">Search Books or Chapters:</label>
+        <input type="search" id="book-search" name="q" placeholder="e.g., NCERT Science Chapter 10">
+        <button type="submit">Search Library</button>
+      </form>
+      <br>
+
+      <table border="1">
+        <caption>Indexed Textbooks &amp; Reference Materials</caption>
+        <thead>
+          <tr>
+            <th scope="col">Book Title</th>
+            <th scope="col">Subject</th>
+            <th scope="col">Board / Grade</th>
+            <th scope="col">Format</th>
+            <th scope="col">Resource Link</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Mathematics Textbook for Class X</td>
+            <td>Mathematics</td>
+            <td>CBSE - Class 10</td>
+            <td>HTML / PDF Placeholder</td>
+            <td><a href="#textbook-library">Open Chapters (Placeholder)</a></td>
+          </tr>
+          <tr>
+            <td>Science: Concepts &amp; Experiments</td>
+            <td>Science</td>
+            <td>CBSE - Class 10</td>
+            <td>HTML / PDF Placeholder</td>
+            <td><a href="#textbook-library">Open Chapters (Placeholder)</a></td>
+          </tr>
+          <tr>
+            <td>India and the Contemporary World - II</td>
+            <td>History</td>
+            <td>CBSE - Class 10</td>
+            <td>HTML / PDF Placeholder</td>
+            <td><a href="#textbook-library">Open Chapters (Placeholder)</a></td>
+          </tr>
+          <tr>
+            <td>First Flight &amp; Footprints Without Feet</td>
+            <td>English</td>
+            <td>CBSE - Class 10</td>
+            <td>HTML / PDF Placeholder</td>
+            <td><a href="#textbook-library">Open Chapters (Placeholder)</a></td>
+          </tr>
+        </tbody>
+      </table>
+      <hr>
+    </section>
+
+    <!-- -------------------------------------------------------------------
+         5. NOTES SECTION
+         ------------------------------------------------------------------- -->
+    <section id="notes" aria-labelledby="notes-heading">
+      <h2 id="notes-heading">Smart Revision Notes</h2>
+      <p><em>Placeholder: Create, organize, and review personal or AI-generated study notes.</em></p>
+
+      <!-- Create Note Form -->
+      <form action="#notes" method="post" aria-label="Create New Study Note">
+        <fieldset>
+          <legend>Create New Note (Requires Backend Storage to Save)</legend>
+
+          <label for="note-title">Note Title:</label><br>
+          <input type="text" id="note-title" name="note_title" size="50" placeholder="e.g., Important Formulas for Trigonometry" required>
+          <br><br>
+
+          <label for="note-subject">Subject:</label>
+          <select id="note-subject" name="note_subject">
+            <option value="math">Mathematics</option>
+            <option value="science">Science</option>
+            <option value="social">Social Science</option>
+            <option value="english">English</option>
+            <option value="cs">Computer Science</option>
+          </select>
+          <br><br>
+
+          <label for="note-body">Note Content:</label><br>
+          <textarea id="note-body" name="note_body" rows="5" cols="70" placeholder="Write your summary, key definitions, or formulas here..."></textarea>
+          <br><br>
+
+          <button type="submit">Save Note (Placeholder)</button>
+        </fieldset>
+      </form>
+
+      <h3>Saved Notes List</h3>
+      <article>
+        <h4>1. Trigonometric Identities Cheat Sheet</h4>
+        <p><small>Subject: Mathematics | Last Edited: Nov 16</small></p>
+        <ul>
+          <li>sin&sup2;&theta; + cos&sup2;&theta; = 1</li>
+          <li>1 + tan&sup2;&theta; = sec&sup2;&theta;</li>
+          <li>1 + cot&sup2;&theta; = csc&sup2;&theta;</li>
+        </ul>
+      </article>
+
+      <article>
+        <h4>2. Chemical Reactions &amp; Equations Summary</h4>
+        <p><small>Subject: Science | Last Edited: Nov 14</small></p>
+        <p>Key reaction types: Combination, Decomposition, Displacement, Double Displacement, and Redox (Oxidation-Reduction).</p>
+      </article>
+      <hr>
+    </section>
+
+    <!-- -------------------------------------------------------------------
+         6. QUIZ SECTION
+         ------------------------------------------------------------------- -->
+    <section id="quiz" aria-labelledby="quiz-heading">
+      <h2 id="quiz-heading">Practice Quiz Module</h2>
+      <p><em>Placeholder: Auto-generated chapter quizzes. Automated scoring and answer validation require JavaScript or server-side processing.</em></p>
+
+      <form action="#quiz" method="post" aria-label="Sample Practice Quiz">
+        <fieldset>
+          <legend>Sample Quiz: General Science &amp; Mathematics (3 Questions)</legend>
+
+          <!-- Question 1 -->
+          <p><strong>Question 1:</strong> What is the SI unit of electric current?</p>
+          <input type="radio" id="q1-a" name="q1" value="volt">
+          <label for="q1-a">Volt (V)</label><br>
+          <input type="radio" id="q1-b" name="q1" value="ampere">
+          <label for="q1-b">Ampere (A)</label><br>
+          <input type="radio" id="q1-c" name="q1" value="ohm">
+          <label for="q1-c">Ohm (&Omega;)</label><br>
+          <input type="radio" id="q1-d" name="q1" value="watt">
+          <label for="q1-d">Watt (W)</label><br><br>
+
+          <!-- Question 2 -->
+          <p><strong>Question 2:</strong> If the discriminant (D) of a quadratic equation is zero, what is the nature of its roots?</p>
+          <input type="radio" id="q2-a" name="q2" value="distinct">
+          <label for="q2-a">Two distinct real roots</label><br>
+          <input type="radio" id="q2-b" name="q2" value="equal">
+          <label for="q2-b">Two equal real roots</label><br>
+          <input type="radio" id="q2-c" name="q2" value="imaginary">
+          <label for="q2-c">No real roots</label><br><br>
+
+          <!-- Question 3 -->
+          <p><strong>Question 3:</strong> Which HTML5 element is specifically intended for main navigation links?</p>
+          <input type="radio" id="q3-a" name="q3" value="section">
+          <label for="q3-a">&lt;section&gt;</label><br>
+          <input type="radio" id="q3-b" name="q3" value="nav">
+          <label for="q3-b">&lt;nav&gt;</label><br>
+          <input type="radio" id="q3-c" name="q3" value="aside">
+          <label for="q3-c">&lt;aside&gt;</label><br><br>
+
+          <button type="submit">Submit Quiz (Requires Backend/JS to Grade)</button>
+          <button type="reset">Reset Answers</button>
+        </fieldset>
+      </form>
+      <hr>
+    </section>
+
+    <!-- -------------------------------------------------------------------
+         7. FLASHCARDS SECTION
+         ------------------------------------------------------------------- -->
+    <section id="flashcards" aria-labelledby="flashcards-heading">
+      <h2 id="flashcards-heading">Interactive Flashcards (HTML5 Disclosure Pattern)</h2>
+      <p><em>Tip: Click on each question below to reveal the answer using native HTML5 &lt;details&gt; and &lt;summary&gt; tags—zero JavaScript required!</em></p>
+
+      <article>
+        <h3>Deck: Core Science &amp; Math Definitions</h3>
+
+        <details>
+          <summary><strong>Card 1:</strong> What is Ohm's Law?</summary>
+          <p><strong>Answer:</strong> At constant temperature, the current (I) flowing through a conductor is directly proportional to the potential difference (V) across its ends: <strong>V = I &times; R</strong>.</p>
+        </details>
+        <br>
+
+        <details>
+          <summary><strong>Card 2:</strong> Define Photosynthesis.</summary>
+          <p><strong>Answer:</strong> The process by which green plants use sunlight, carbon dioxide (CO<sub>2</sub>), and water (H<sub>2</sub>O) to synthesize glucose and release oxygen.</p>
+        </details>
+        <br>
+
+        <details>
+          <summary><strong>Card 3:</strong> State the Pythagorean Theorem.</summary>
+          <p><strong>Answer:</strong> In a right-angled triangle, the square of the hypotenuse equals the sum of the squares of the other two sides: <strong>a&sup2; + b&sup2; = c&sup2;</strong>.</p>
+        </details>
+      </article>
+      <hr>
+    </section>
+
+    <!-- -------------------------------------------------------------------
+         8. EXAM PREPARATION SECTION
+         ------------------------------------------------------------------- -->
+    <section id="exam-prep" aria-labelledby="exam-heading">
+      <h2 id="exam-heading">Exam Preparation &amp; Study Planner</h2>
+      <p><em>Placeholder: Exam countdowns, syllabus completion tracking, and sample papers.</em></p>
+
+      <h3>Syllabus Readiness Overview</h3>
+      <ul>
+        <li>
+          <label for="prog-math">Mathematics Syllabus Progress (60%):</label>
+          <progress id="prog-math" value="60" max="100">60%</progress>
+        </li>
+        <li>
+          <label for="prog-sci">Science Syllabus Progress (70%):</label>
+          <progress id="prog-sci" value="70" max="100">70%</progress>
+        </li>
+        <li>
+          <label for="prog-soc">Social Science Syllabus Progress (60%):</label>
+          <progress id="prog-soc" value="60" max="100">60%</progress>
+        </li>
+      </ul>
+
+      <h3>Upcoming Exam Schedule &amp; Mock Tests</h3>
+      <table border="1">
+        <caption>Board Exam &amp; Mock Test Timetable</caption>
+        <thead>
+          <tr>
+            <th scope="col">Date</th>
+            <th scope="col">Subject</th>
+            <th scope="col">Assessment Type</th>
+            <th scope="col">Duration</th>
+            <th scope="col">Mock Paper</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Dec 05, 2026</td>
+            <td>Mathematics</td>
+            <td>Full Syllabus Mock Test #1</td>
+            <td>3 Hours</td>
+            <td><a href="#quiz">Start Mock Test (Placeholder)</a></td>
+          </tr>
+          <tr>
+            <td>Dec 08, 2026</td>
+            <td>Science</td>
+            <td>Full Syllabus Mock Test #1</td>
+            <td>3 Hours</td>
+            <td><a href="#quiz">Start Mock Test (Placeholder)</a></td>
+          </tr>
+          <tr>
+            <td>Dec 12, 2026</td>
+            <td>English</td>
+            <td>Reading &amp; Writing Practice Paper</td>
+            <td>3 Hours</td>
+            <td><a href="#quiz">Start Mock Test (Placeholder)</a></td>
+          </tr>
+        </tbody>
+      </table>
+      <hr>
+    </section>
+
+    <!-- -------------------------------------------------------------------
+         9. STUDENT PROFILE SECTION
+         ------------------------------------------------------------------- -->
+    <section id="profile" aria-labelledby="profile-heading">
+      <h2 id="profile-heading">Student Profile</h2>
+      <p><em>Placeholder: Student academic details, learning streaks, and performance metrics.</em></p>
+
+      <table border="1">
+        <caption>Student Academic Summary</caption>
+        <tbody>
+          <tr>
+            <th scope="row">Student Name</th>
+            <td>Aarav Sharma (Placeholder Profile)</td>
+          </tr>
+          <tr>
+            <th scope="row">Class / Grade</th>
+            <td>Class 10</td>
+          </tr>
+          <tr>
+            <th scope="row">Education Board</th>
+            <td>CBSE</td>
+          </tr>
+          <tr>
+            <th scope="row">Preferred Language</th>
+            <td>English</td>
+          </tr>
+          <tr>
+            <th scope="row">Study Streak</th>
+            <td>14 Days</td>
+          </tr>
+          <tr>
+            <th scope="row">Quizzes Completed</th>
+            <td>28 Quizzes (Average Score: 84%)</td>
+          </tr>
+        </tbody>
+      </table>
+      <hr>
+    </section>
+
+    <!-- -------------------------------------------------------------------
+         10. SETTINGS SECTION (LANGUAGE, CLASS, BOARD & PREFERENCES)
+         ------------------------------------------------------------------- -->
+    <section id="settings" aria-labelledby="settings-heading">
+      <h2 id="settings-heading">Platform &amp; Academic Settings</h2>
+      <p><em>Placeholder: Configure your language, grade level, education board, and AI tutor behavior. Saving requires backend persistence.</em></p>
+
+      <form action="#settings" method="post" aria-label="User Settings Form">
+        <fieldset>
+          <legend>Academic &amp; Localization Preferences</legend>
+
+          <label for="settings-name">Display Name:</label><br>
+          <input type="text" id="settings-name" name="display_name" value="Aarav Sharma">
+          <br><br>
+
+          <label for="settings-language">Preferred Instruction Language:</label><br>
+          <select id="settings-language" name="preferred_language">
+            <option value="en" selected>English</option>
+            <option value="hi">Hindi (हिन्दी)</option>
+            <option value="bn">Bengali (বাংলা)</option>
+            <option value="ta">Tamil (தமிழ்)</option>
+            <option value="te">Telugu (తెలుగు)</option>
+            <option value="mr">Marathi (मराठी)</option>
+            <option value="es">Spanish (Español)</option>
+            <option value="fr">French (Français)</option>
+          </select>
+          <br><br>
+
+          <label for="settings-class">Current Class / Grade:</label><br>
+          <select id="settings-class" name="student_class">
+            <option value="6">Class 6</option>
+            <option value="7">Class 7</option>
+            <option value="8">Class 8</option>
+            <option value="9">Class 9</option>
+            <option value="10" selected>Class 10</option>
+            <option value="11">Class 11</option>
+            <option value="12">Class 12</option>
+            <option value="college">College / University</option>
+          </select>
+          <br><br>
+
+          <label for="settings-board">Education Board / Curriculum:</label><br>
+          <select id="settings-board" name="education_board">
+            <option value="cbse" selected>CBSE (Central Board of Secondary Education)</option>
+            <option value="icse">ICSE / ISC</option>
+            <option value="state">State Board</option>
+            <option value="ib">IB (International Baccalaureate)</option>
+            <option value="igcse">Cambridge IGCSE</option>
+            <option value="ap">AP / US High School</option>
+          </select>
+          <br><br>
+
+          <label for="settings-style">AI Teaching Style:</label><br>
+          <select id="settings-style" name="teaching_style">
+            <option value="step-by-step" selected>Step-by-Step Guided Explanation</option>
+            <option value="concise">Concise Exam-Focused Bullet Points</option>
+            <option value="socratic">Socratic Method (Ask Me Guiding Questions)</option>
+            <option value="eli5">Simple Analogies &amp; Beginner Friendly</option>
+          </select>
+          <br><br>
+
+          <input type="checkbox" id="settings-reminders" name="daily_reminders" checked>
+          <label for="settings-reminders">Enable daily revision and quiz reminders</label>
+          <br><br>
+
+          <button type="submit">Save Settings (Requires Backend)</button>
+          <button type="reset">Restore Defaults</button>
+        </fieldset>
+      </form>
+      <hr>
+    </section>
+
+  </main>
+
+  <!-- =====================================================================
+       SITE FOOTER
+       ===================================================================== -->
+  <footer>
+    <p><strong>AI Teacher</strong> — Pure Semantic HTML5 Educational Platform Structure.</p>
+    <p><small>Note: No CSS, JavaScript, or external frameworks are included in this file. Connect a stylesheet and backend API to enable styling and live functionality.</small></p>
+    <p><a href="#top">Back to Top &uarr;</a></p>
+  </footer>
+
+</body>
+</html>
