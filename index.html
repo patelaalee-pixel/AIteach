@@ -16,7 +16,7 @@
     <p><em>Pure HTML5 Structural Prototype — Ready for CSS Styling &amp; Backend Integration</em></p>
 
     <!-- Global Quick Selectors (Language, Class, Education Board) -->
-    <form action="#settings" method="get" aria-label="Quick Academic Context">
+    <form action="" method="get" aria-label="Quick Academic Context">
       <fieldset>
         <legend>Quick Academic &amp; Language Context</legend>
 
@@ -78,7 +78,7 @@
     <h2>Chat Sessions</h2>
 
     <!-- New Chat Trigger -->
-    <form action="#ai-chat" method="get">
+    <form action="" method="get">
       <button type="submit">+ Start New Chat Session (Placeholder)</button>
     </form>
 
@@ -177,8 +177,8 @@
         </article>
       </div>
 
-      <!-- Message Input Area & Send Form -->
-      <form action="#ai-chat" method="post" aria-label="Send Message to AI Teacher">
+      <!-- Message Input Area & Send Form (Using method="get" with empty action to prevent 405/404 errors on static servers) -->
+      <form action="" method="get" aria-label="Send Message to AI Teacher">
         <fieldset>
           <legend>Message Input Area</legend>
 
@@ -273,7 +273,7 @@
       <p><em>Placeholder: Digital textbook repository and chapter reader links. File viewing and search require backend storage.</em></p>
 
       <!-- Library Search Form -->
-      <form action="#textbook-library" method="get" aria-label="Search Textbooks">
+      <form action="" method="get" aria-label="Search Textbooks">
         <label for="book-search">Search Books or Chapters:</label>
         <input type="search" id="book-search" name="q" placeholder="e.g., NCERT Science Chapter 10">
         <button type="submit">Search Library</button>
@@ -333,7 +333,7 @@
       <p><em>Placeholder: Create, organize, and review personal or AI-generated study notes.</em></p>
 
       <!-- Create Note Form -->
-      <form action="#notes" method="post" aria-label="Create New Study Note">
+      <form action="" method="get" aria-label="Create New Study Note">
         <fieldset>
           <legend>Create New Note (Requires Backend Storage to Save)</legend>
 
@@ -385,7 +385,7 @@
       <h2 id="quiz-heading">Practice Quiz Module</h2>
       <p><em>Placeholder: Auto-generated chapter quizzes. Automated scoring and answer validation require JavaScript or server-side processing.</em></p>
 
-      <form action="#quiz" method="post" aria-label="Sample Practice Quiz">
+      <form action="" method="get" aria-label="Sample Practice Quiz">
         <fieldset>
           <legend>Sample Quiz: General Science &amp; Mathematics (3 Questions)</legend>
 
@@ -563,7 +563,7 @@
       <h2 id="settings-heading">Platform &amp; Academic Settings</h2>
       <p><em>Placeholder: Configure your language, grade level, education board, and AI tutor behavior. Saving requires backend persistence.</em></p>
 
-      <form action="#settings" method="post" aria-label="User Settings Form">
+      <form action="" method="get" aria-label="User Settings Form">
         <fieldset>
           <legend>Academic &amp; Localization Preferences</legend>
 
