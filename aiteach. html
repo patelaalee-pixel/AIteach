@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="AI Teacher - Pure HTML5 Educational Platform Structure">
+  <title>AI Teacher | Pure HTML5 Educational Workspace</title>
+</head>
+<body>
+
+  <!-- =====================================================================
+       SITE HEADER & PRIMARY NAVIGATION
+       ===================================================================== -->
+  <header id="top">
+    <h1>AI Teacher</h1>
+    <p><em>Pure HTML5 Structural Prototype — Ready for CSS Styling &amp; Backend Integration</em></p>
+
+    <!-- Global Quick Selectors (Language, Class, Education Board) -->
+    <form action="#settings" method="get" aria-label="Quick Academic Context">
+      <fieldset>
+        <legend>Quick Academic &amp; Language Context</legend>
+
+        <label for="header-lang">Language:</label>
+        <select id="header-lang" name="language">
+          <option value="en" selected>English</option>
+          <option value="hi">Hindi (हिन्दी)</option>
+          <option value="es">Spanish (Español)</option>
+          <option value="fr">French (Français)</option>
+          <option value="ar">Arabic (العربية)</option>
+        </select>
+
+        <label for="header-class">Class / Grade:</label>
+        <select id="header-class" name="class">
+          <option value="8">Class 8</option>
+          <option value="9">Class 9</option>
+          <option value="10" selected>Class 10</option>
+          <option value="11">Class 11</option>
+          <option value="12">Class 12</option>
+          <option value="ug">Undergraduate</option>
+        </select>
+
+        <label for="header-board">Education Board:</label>
+        <select id="header-board" name="board">
+          <option value="cbse" selected>CBSE</option>
+          <option value="icse">ICSE</option>
+          <option value="state">State Board</option>
+          <option value="ib">IB (International Baccalaureate)</option>
+          <option value="cambridge">Cambridge IGCSE / A-Levels</option>
+          <option value="common-core">US Common Core</option>
+        </select>
+
+        <button type="submit">Apply Context (Requires Backend)</button>
+      </fieldset>
+    </form>
+
+    <!-- Primary Section Navigation -->
+    <nav aria-label="Main Platform Navigation">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#ai-chat">AI Tutor Chat</a></li>
+        <li><a href="#subjects">Subjects</a></li>
+        <li><a href="#textbook-library">Textbook Library</a></li>
+        <li><a href="#notes">Notes</a></li>
+        <li><a href="#quiz">Quiz</a></li>
+        <li><a href="#flashcards">Flashcards</a></li>
+        <li><a href="#exam-prep">Exam Preparation</a></li>
+        <li><a href="#profile">Student Profile</a></li>
+        <li><a href="#settings">Settings</a></li>
+      </ul>
+    </nav>
+    <hr>
+  </header>
+
+  <!-- =====================================================================
+       SIDEBAR: NEW CHAT & CHAT HISTORY
+       ===================================================================== -->
+  <aside aria-label="Chat Sessions and History">
+    <h2>Chat Sessions</h2>
+
+    <!-- New Chat Trigger -->
+    <form action="#ai-chat" method="get">
+      <button type="submit">+ Start New Chat Session (Placeholder)</button>
+    </form>
+
+    <h3>Chat History</h3>
+    <p><small><em>Placeholder: Past tutoring sessions will load dynamically here when connected to a database.</em></small></p>
+
+    <nav aria-label="Previous Conversations">
+      <ul>
+        <li>
+          <a href="#ai-chat"><strong>Quadratic Equations &amp; Discriminants</strong></a><br>
+          <small>Subject: Mathematics | Yesterday</small>
+        </li>
+        <li>
+          <a href="#ai-chat"><strong>Photosynthesis Light-Dependent Reactions</strong></a><br>
+          <small>Subject: Biology | 3 days ago</small>
+        </li>
+        <li>
+          <a href="#ai-chat"><strong>French Revolution: Causes &amp; Timeline</strong></a><br>
+          <small>Subject: History | Nov 12</small>
+        </li>
+        <li>
+          <a href="#ai-chat"><strong>Ohm's Law &amp; Series/Parallel Circuits</strong></a><br>
+          <small>Subject: Physics | Nov 09</small>
+        </li>
+      </ul>
+    </nav>
+    <hr>
+  </aside>
+
+  <!-- =====================================================================
+       MAIN CONTENT AREA
+       ===================================================================== -->
+  <main>
+
+    <!-- -------------------------------------------------------------------
+         1. AI TEACHER HOMEPAGE / HERO OVERVIEW
+         ------------------------------------------------------------------- -->
+    <section id="home" aria-labelledby="home-heading">
+      <h2 id="home-heading">Welcome to AI Teacher</h2>
+      <p>
+        <strong>Your Personal 24/7 Curriculum-Aligned Study Companion.</strong>
+        Ask doubts, practice chapter-wise quizzes, review flashcards, and generate structured revision notes tailored to your class and education board.
+      </p>
+
+      <article>
+        <h3>Platform Status Notice</h3>
+        <blockquote>
+          <strong>HTML5 Structural Prototype:</strong> This page is built exclusively with semantic HTML5. Interactive features such as live AI responses, file uploads, quiz grading, and saving preferences require CSS for styling and JavaScript/Backend APIs for functionality.
+        </blockquote>
+      </article>
+
+      <h3>Quick Start Actions</h3>
+      <ul>
+        <li><a href="#ai-chat">Ask a Question in AI Tutor Chat</a></li>
+        <li><a href="#subjects">Browse Subjects &amp; Syllabus</a></li>
+        <li><a href="#quiz">Take a Practice Quiz</a></li>
+        <li><a href="#exam-prep">Open Exam Preparation Planner</a></li>
+      </ul>
+      <hr>
+    </section>
+
+    <!-- -------------------------------------------------------------------
+         2. AI CHAT INTERFACE LAYOUT
+         ------------------------------------------------------------------- -->
+    <section id="ai-chat" aria-labelledby="chat-heading">
+      <h2 id="chat-heading">AI Tutor Chat Interface</h2>
+      <p><em>Placeholder: Real-time conversational tutoring window. Connect an LLM API and WebSocket/Fetch handler here.</em></p>
+
+      <!-- Active Session Header -->
+      <header>
+        <h3>Active Session: Quadratic Equations (Class 10 - Mathematics)</h3>
+        <p><small>Mode: Step-by-Step Explanation | Board: CBSE</small></p>
+      </header>
+
+      <!-- Conversation Thread Container -->
+      <div role="log" aria-live="polite" aria-label="Chat Messages">
+        <article>
+          <h4>AI Teacher <small>(09:30 AM)</small></h4>
+          <p>Hello! I am your AI Teacher. Which chapter or concept would you like to study today? You can paste a problem, ask for a summary, or request practice questions.</p>
+        </article>
+
+        <article>
+          <h4>Student <small>(09:31 AM)</small></h4>
+          <p>Can you explain how to find the nature of roots of a quadratic equation using the discriminant?</p>
+        </article>
